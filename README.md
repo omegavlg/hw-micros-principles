@@ -27,6 +27,16 @@
 | Развертывание  | On-premise | On-premise | On-premise | On-cloud | On-cloud | On-premise |
 
 
+### Сравнение API Gateway
+
+| Решение         | Kong       | NGINX (с модулем API Gateway) | Traefik    | Envoy      | AWS API Gateway | KrakenD    |
+|----------------|-----------|-----------------------------|------------|------------|-----------------|------------|
+| Маршрутизация запросов | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Аутентификация | ✅ | ⚠️ (через внешний модуль) | ⚠️ (OIDC, OAuth2) | ✅ | ✅ | ✅ |
+| SSL/TLS        | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Развертывание  | On-premise | On-premise | On-cloud | On-premise | On-cloud | On-premise |
+
+
 ---
 ## Задача 2: Брокер сообщений
 
